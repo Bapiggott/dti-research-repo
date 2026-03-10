@@ -314,7 +314,7 @@ The table below compares **common steps reported in the literature** with **what
 | **Fiber Tractography** | Moderate | MRtrix3, Dipy, PANDA | ⚠ Partial | Graph builder consumes `.tck` streamlines; tractography generation not in repo |
 | **ROI Extraction** | Moderate | AAL, FMRIB58_FA | ✅ Yes | AAL atlas with 116 regions |
 | **Radiomics Feature Extraction** | Moderate | `pyradiomics` | ❌ No | Instead ROI statistical summaries used |
-| **Graph Construction** | Moderate | Structural connectivity networks | ⚠ Partial | Tractography-based adjacency when `.tck` is provided |
+| **Graph Construction** | Moderate | Structural connectivity networks | ✅ Yes | Tractography-based adjacency when `.tck` is provided |
 | **Data Augmentation** | Low | TorchIO, GANs | ❌ No | Not used |
 
 ---
