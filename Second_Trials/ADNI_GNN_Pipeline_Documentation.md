@@ -80,7 +80,6 @@ The date folder (e.g. `2017-06-21_13_48_54.0`) encodes the scan acquisition date
 | RD (Radial Diffusivity) | 451 |
 | AD (Axial Diffusivity) | 471 |
 | **All four scalars** | **43** |
-| Raw DWI (tractography possible) | ~12 (Axial_MB_DTI_PA_MSV21_ series only) |
 
 **Important:** ADNI pre-computed all scalar maps. No DICOM conversion or tensor fitting was required. The scalars are already in NIfTI format in native (subject) space.
 
