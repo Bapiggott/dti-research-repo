@@ -301,20 +301,20 @@ The table below compares **common steps reported in the literature** with **what
 | **DICOM → NIfTI Conversion** | Standard | `dcm2niix` | ✅ Yes | `dcm2niix` used for ADNI conversion |
 | **Eddy Current Correction** | Nearly universal | FSL `eddy`, MRtrix3 | ✅ Yes | FSL `eddy` |
 | **Motion Correction** | Nearly universal | FSL `eddy` | ✅ Yes | Handled by `eddy` |
-| **Distortion Correction (Topup / Fieldmap)** | Common in newer studies | FSL `topup`, Synb0-DisCo | ⚠ Partial | Acquisition parameters used but full reverse phase-encoding correction not always available |
+| **Distortion Correction (Topup / Fieldmap)** | Common in newer studies | FSL `topup`, Synb0-DisCo | ⚠ Partial | Reverse-PE `topup` only when a reverse b0 exists |
 | **Tensor Fitting** | High | FSL `dtifit`, Dipy | ✅ Yes | FSL `dtifit` |
-| **FA / MD / RD / AD Scalar Maps** | High | FSL, MRtrix3, Dipy | ✅ Yes | All four scalars extracted |
+| **FA / MD / RD / AD Scalar Maps** | High | FSL, MRtrix3, Dipy | ⚠ Partial | FA/MD from `dtifit`; RD/AD only if precomputed ADNI maps exist |
 | **Skull Stripping** | High | FSL BET, ROBEX, BrainSuite | ✅ Yes | FSL BET |
 | **Denoising** | Moderate | MRtrix3 `dwidenoise` | ❌ Not yet | Planned improvement |
 | **Gibbs Ringing Correction** | Moderate | MRtrix3 `mrdegibbs` | ❌ Not yet | Planned improvement |
 | **Bias Field Correction** | Moderate | ANTs N4, N3 | ❌ Not yet | Could be added later |
-| **Resampling to Isotropic Voxels** | Common | FSL, ANTs | ✅ Yes | Resampled during preprocessing |
-| **Registration to Standard Space** | High | FSL FLIRT/FNIRT, ANTs | ✅ Yes | FSL FLIRT + FNIRT to MNI space |
+| **Resampling to Isotropic Voxels** | Common | FSL, ANTs | ⚠ Partial | Atlas resampled to FA grid; no explicit isotropic resample step |
+| **Registration to Standard Space** | High | FSL FLIRT/FNIRT, ANTs | ✅ Yes | FLIRT + FNIRT in full pipeline; affine-only in extraction scripts |
 | **Cropping / Volume Normalization** | Moderate | FSL `fslroi` | ⚠ Partial | Some cropping performed |
-| **Fiber Tractography** | Moderate | MRtrix3, Dipy, PANDA | ⚠ Partial | Streamlines generated but not always used for graph edges |
+| **Fiber Tractography** | Moderate | MRtrix3, Dipy, PANDA | ⚠ Partial | Graph builder consumes `.tck` streamlines; tractography generation not in repo |
 | **ROI Extraction** | Moderate | AAL, FMRIB58_FA | ✅ Yes | AAL atlas with 116 regions |
 | **Radiomics Feature Extraction** | Moderate | `pyradiomics` | ❌ No | Instead ROI statistical summaries used |
-| **Graph Construction** | Moderate | Structural connectivity networks | ✅ Yes | Graph built from AAL spatial adjacency |
+| **Graph Construction** | Moderate | Structural connectivity networks | ⚠ Partial | Tractography-based adjacency when `.tck` is provided |
 | **Data Augmentation** | Low | TorchIO, GANs | ❌ No | Not used |
 
 ---
