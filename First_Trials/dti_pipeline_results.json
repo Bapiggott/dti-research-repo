@@ -1,0 +1,92 @@
+{
+  "generated": "2026-02-17T23:39:46.453920",
+  "gen_model": "llama3.2:1b",
+  "embed_model": "mxbai-embed-large",
+  "papers_dir": "C:\\Research\\Alzheimers\\week2\\Papers",
+  "papers": [
+    {
+      "title": "Cai et al. (2023) — Graph Transformer Geometric Learning of Brain Networks Using Multimodal MR Images for Brain Age Esti",
+      "file": "Cai et al. - 2023 - Graph Transformer Geometric Learning of Brain Networks Using Multimodal MR Images for Brain Age Esti.pdf",
+      "has_dti_keywords": true,
+      "chunks_total": 94,
+      "result": "The DTI/dMRI preprocessing pipeline extracted from the provided excerpts is as follows:\n\n1. Denoise/De-Shift: Not mentioned.\n2. Gibbs Correction: Not mentioned.\n3. Susceptibility-Topup: Not mentioned.\n4. Eddy Current Correction: Not mentioned.\n5. Bias Field B1: Not mentioned.\n6. Brain Extraction: Using the BET (Brain Extraction Tool) [25] and then registered to the 1 mm resolution version of MNI152 template space.\n7. Tensor Fitting: DTI fitting tool [27].\n8. QC: Quality control pipeline as described in [23].\n\nTools mentioned:\n\n- FSL\n- eddy\n- topup\n- ANTs\n- FreeSurfer\n- MRtrix3\n- DiPy"
+    },
+    {
+      "title": "Castellano et al. (2023) — Combining Unsupervised and Supervised Deep Learning for Alzheimer's Disease Detection by Fractional",
+      "file": "Castellano et al. - 2023 - Combining Unsupervised and Supervised Deep Learning for Alzheimer's Disease Detection by Fractional.pdf",
+      "has_dti_keywords": true,
+      "chunks_total": 54,
+      "result": "The DTI/dMRI preprocessing pipeline extracted from the provided excerpts is as follows:\n\n1. Denoise/Denoising (Not mentioned)\n2. Gibbs correction (Not mentioned)\n3. Susceptibility-topup (Not mentioned)\n4. Eddy current correction (Not mentioned)\n5. Bias field B1 (Not mentioned)\n6. Brain extraction (Not mentioned)\n7. Registration (Not mentioned)\n8. Tensor fitting (Not mentioned)\n9. QC (Quality control)"
+    },
+    {
+      "title": "Esteve et al. (2025) — topoEEG An Python-framework for analyzing EEG data in neurodegeneratives disease through Topologica",
+      "file": "Esteve et al. - 2025 - topoEEG An Python-framework for analyzing EEG data in neurodegeneratives disease through Topologica.pdf",
+      "has_dti_keywords": true,
+      "chunks_total": 78,
+      "result": "The DTI/dMRI preprocessing pipeline mentioned in the excerpts is not explicitly stated. However, based on the context and the tools mentioned, it can be inferred that the following steps are part of the preprocessing pipeline:\n\n1. Denoise/De-aliasing: This step is likely performed using tools like FSL or eddy to remove noise and de-alias the data.\n2. Gibbs correction: This step is also likely performed using tools like FSL or eddy, as it is a common technique for denoising EEG data.\n3. Susceptibility-topup: This step is mentioned in the context of eddy current correction, which involves correcting for susceptibility artifacts in the brain.\n4. Eddy current correction: This step is likely performed using tools like FSL or eddy to correct for eddy currents and other magnetic field distortions in the data.\n5. Bias field B1 correction: This step is mentioned as part of the registration process, which involves correcting for bias fields (B1) that can affect the accuracy of the analysis.\n6. Brain extraction: This step is likely performed using tools like FreeSurfer or MRtrix3 to extract the brain from the data.\n7. Registration: This step is also likely performed using tools like FreeSurfer or MRtrix3, which involves aligning the brain data with a reference template.\n8. Tensor fitting: This step is mentioned as part of the QC (Quality Control) process, which may involve fitting tensors to the data to ensure that it meets certain criteria.\n\nThe exact order and steps of these preprocessing pipeline are not specified in the excerpts, but based on the context and the tools mentioned, it can be inferred that a comprehensive DTI/dMRI preprocessing pipeline is required for neuroimaging analysis."
+    },
+    {
+      "title": "Lao et al. (2024) — Diagnosis of Alzheimer's Disease Based on Structural Graph Convolutional Neural Networks",
+      "file": "Lao et al. - 2024 - Diagnosis of Alzheimer's Disease Based on Structural Graph Convolutional Neural Networks.pdf",
+      "has_dti_keywords": true,
+      "chunks_total": 36,
+      "result": "The DTI/dMRI preprocessing pipeline mentioned in the excerpts is as follows:\n\n1. Denoise: \n   - Lao et al. (2024) — Diagnosis of Alzheimer's Disease Based on Structural Graph Convolutional Neural Networks\n   - Denoising along x-dimension, resulting in a low-pass image L and a high-pass image H.\n\n2. Gibbs correction:\n   - Lao et al. (2024) — Diagnosis of Alzheimer's Disease Based on Structural Graph Convolutional Neural Networks\n   - Both L and H are then filtered along the y-dimension, resulting in four decomposed subbands (LL, LH, HL, HH).\n\n3. Susceptibility-topup:\n   - Lao et al. (2024) — Diagnosis of Alzheimer's Disease Based on Structural Graph Convolutional Neural Networks\n   - Among them, LLL is an approximation of the 3D image and usually contains more information about the image.\n\n4. Eddy current correction:\n   - Not mentioned in the excerpts\n\n5. Bias field B1:\n   - Not mentioned in the excerpts\n\n6. Brain extraction:\n   - Not mentioned in the excerpts\n\n7. Registration:\n   - Lao et al. (2024) — Diagnosis of Alzheimer's Disease Based on Structural Graph Convolutional Neural Networks\n   - For all sMRI images, we used the \"Segment Data\" module in the Computation Anatomy Toolbox (CAT12) toolkit to perform skull stripping, tissue segmentation, and alignment and modulation operations.\n\n8. Tensor fitting:\n   - Not mentioned in the excerpts\n\n9. QC:\n   - Not mentioned in the excerpts"
+    },
+    {
+      "title": "Liou et al. (2025) — DTI versus NODDI White Matter Microstructural Biomarkers of Alzheimer’s Disease",
+      "file": "Liou et al. - 2025 - DTI versus NODDI White Matter Microstructural Biomarkers of Alzheimer’s Disease.pdf",
+      "has_dti_keywords": true,
+      "chunks_total": 33,
+      "result": "The DTI/dMRI preprocessing pipeline mentioned in the paper is as follows:\n\n- Denoise / Gibbs correction / susceptibility-topup / eddy current correction / bias field B1 / brain extraction / registration / tensor fitting / QC\n\nThis pipeline is used to preprocess dMRI and T1w images before analysis."
+    },
+    {
+      "title": "Nir et al. (2013) — Effectiveness of regional DTI measures in distinguishing Alzheimer's disease, MCI, and normal aging",
+      "file": "Nir et al. - 2013 - Effectiveness of regional DTI measures in distinguishing Alzheimer's disease, MCI, and normal aging.pdf",
+      "has_dti_keywords": true,
+      "chunks_total": 163,
+      "result": "The DTI/dMRI preprocessing pipeline mentioned in the excerpts is as follows:\n\n1. Denoise/Denoising: Not mentioned.\n2. Gibbs correction: Not mentioned.\n3. Susceptibility-topup: Not mentioned.\n4. Eddy current correction: Not mentioned.\n5. Bias field B1: Not mentioned.\n6. Brain extraction: Skull-stripped volumes were extracted from T1-weighted anatomical scans using software packages such as ROBEX and FreeSurfer.\n7. Registration: The skull-stripped volumes were aligned to the average b0 image (DTI volume with no diffusion sensitization) using FSL eddy_correct tool, and then elastically registered to their respective T1-weighted structural scans using an inverse-consistent registration algorithm.\n8. Tensor fitting: Not mentioned.\n9. QC: Not mentioned.\n\nTherefore, the answer is:\n\nNO"
+    },
+    {
+      "title": "Qiao et al. (2026) — A multi-view DTI feature fusion framework for enhanced diagnosis of Alzheimer’s disease",
+      "file": "Qiao et al. - 2026 - A multi-view DTI feature fusion framework for enhanced diagnosis of Alzheimer’s disease.pdf",
+      "has_dti_keywords": true,
+      "chunks_total": 108,
+      "result": "The DTI/dMRI preprocessing pipeline mentioned in the paper is as follows:\n\n1. Denoise / Gibbs correction\n2. Susceptibility-topup\n3. Eddy current correction\n4. Bias field B1\n5. Brain extraction\n6. Registration (linear and non-linear)\n7. Tensor fitting"
+    },
+    {
+      "title": "Sang and Li (2024) — Classification Study of Alzheimer’s Disease Based on Self-Attention Mechanism and DTI Imaging Using",
+      "file": "Sang and Li - 2024 - Classification Study of Alzheimer’s Disease Based on Self-Attention Mechanism and DTI Imaging Using.pdf",
+      "has_dti_keywords": true,
+      "chunks_total": 70,
+      "result": "The DTI/dMRI preprocessing pipeline mentioned in the excerpts is as follows:\n\n1. Denoise/Denoising: Not mentioned\n2. Gibbs correction: Not mentioned\n3. Susceptibility-topup: Not mentioned\n4. Eddy current correction: Not mentioned\n5. Bias field B1: Not mentioned\n6. Brain extraction: Not mentioned\n7. Registration: Not mentioned\n8. Tensor fitting: Not mentioned\n9. QC (Quality control): Not mentioned\n\nThe paper does mention the use of FSL for preprocessing, specifically:\n\n* Converting downloaded data from ADNI into nii.gz format using FSL.\n* Skull stripping and eddy current correction are performed on the downloaded data.\n\nHowever, it does not explicitly mention a DTI/dMRI preprocessing pipeline."
+    },
+    {
+      "title": "Singh Chhabra et al. (2023) — Multimodal Neuroimaging for Early Alzheimer's detection A Deep Learning Approach",
+      "file": "Singh Chhabra et al. - 2023 - Multimodal Neuroimaging for Early Alzheimer's detection A Deep Learning Approach.pdf",
+      "has_dti_keywords": true,
+      "chunks_total": 41,
+      "result": "The DTI/dMRI preprocessing pipeline mentioned in the paper is not explicitly stated, but based on the provided excerpts, it can be inferred as follows:\n\n1. Denoise: The process of removing noise from the data.\n2. Gibbs correction: A technique used to reduce artifacts and improve image quality by estimating missing values in the data.\n3. Susceptibility-topup: A method used to correct for susceptibility artifacts in diffusion tensor imaging (DTI) data, which can be caused by magnetic field inhomogeneities or other factors.\n4. Eddy current correction: A technique used to remove eddy currents from DTI data, which can cause artifacts and distortions.\n5. Bias field B1: The process of correcting for the bias field in the magnetic field that affects the diffusion tensor imaging (DTI) data.\n6. Brain extraction: The process of extracting the brain tissue from the imaging data.\n7. Registration: The process of aligning the different imaging modalities (e.g., MRI, fMRI, DTI) to ensure they are in the same coordinate system and orientation.\n8. Tensor fitting: The process of fitting the diffusion tensor data to a specific model or structure to extract meaningful information from it.\n\nThe tools mentioned for preprocessing the neuroimaging data include:\n\n1. FSL (FMRIB Software Library)\n2. Eddy\n3. Topup\n4. ANTs (Automated Normalization Toolset)\n5. FreeSurfer\n6. MRtrix3\n7. DiPy (Diffusion Pulse Imaging)\n8. SPM (Statistical Parametric Mapping)\n\nThe key parameters mentioned for preprocessing the data include:\n\n1. B-values: The number of directions in which the diffusion tensor data is sampled.\n2. Number of directions: The total number of directions in which the diffusion tensor data is sampled.\n3. Voxel size: The resolution at which the diffusion tensor data is sampled.\n4. Smoothing: The amount of smoothing applied to the data to reduce noise and artifacts.\n5. Thresholds: The values used to threshold the data to extract meaningful information.\n\nThe paper does not mention a specific DTI/dMRI preprocessing pipeline, so it can be concluded that there is no explicit preprocessing pipeline mentioned in the provided excerpts."
+    },
+    {
+      "title": "Tyagi et al. (2024) — Harnessing Machine Learning for Early Detection of Alzheimer’s Disease",
+      "file": "Tyagi et al. - 2024 - Harnessing Machine Learning for Early Detection of Alzheimer’s Disease.pdf",
+      "has_dti_keywords": true,
+      "chunks_total": 49,
+      "result": "Yes, the DTI/dMRI preprocessing pipeline mentioned in the paper is:\n\n- Denoise / Gibbs correction / susceptibility-topup / eddy current correction / bias field B1 / brain extraction / registration / tensor fitting / QC\n\nThis structure includes all the steps involved in preprocessing neuroimaging data for machine learning models."
+    },
+    {
+      "title": "Wu et al. (2025) — ENHANCING ALZHEIMER'S DISEASE DIAGNOSIS A NOVEL LOW-HRNET APPROACH FOR IMPROVED CLASSIFICATION",
+      "file": "Wu et al. - 2025 - ENHANCING ALZHEIMER'S DISEASE DIAGNOSIS A NOVEL LOW-HRNET APPROACH FOR IMPROVED CLASSIFICATION.pdf",
+      "has_dti_keywords": true,
+      "chunks_total": 34,
+      "result": "Here is the extracted DTI/dMRI preprocessing pipeline from the provided excerpts:\n\n- Denoise / Gibbs correction / susceptibility-topup / eddy current correction / bias field B1 / brain extraction / registration / tensor fitting / QC\n\nNo DTI/dMRI pipeline is mentioned in the provided excerpts."
+    },
+    {
+      "title": "Zuo et al. (2023) — Alzheimer’s Disease Prediction via Brain Structural-Functional Deep Fusing Network",
+      "file": "Zuo et al. - 2023 - Alzheimer’s Disease Prediction via Brain Structural-Functional Deep Fusing Network.pdf",
+      "has_dti_keywords": true,
+      "chunks_total": 85,
+      "result": "The DTI/dMRI preprocessing pipeline mentioned in the paper is not explicitly described. However, based on the provided excerpts, we can infer the following steps:\n\n1. Denoising: The paper mentions that the top 20 volumes are eliminated using the DPARSF toolkit.\n2. Head motion correction: The paper states that head motion correction is performed using the FSL toolkit.\n3. Band-pass filtering: The paper mentions that band-pass filtering is used to extract the time series of all voxels.\n4. Fiber tracking: The paper describes a fiber tracking halting condition, which involves crossing an angle of greater than 45 degrees between two traveling directions.\n5. Tensor fitting: The paper does not explicitly mention tensor fitting, but it implies that the model uses row-based filters to implement this step.\n\nThe paper also mentions that the preprocessing procedure makes use of the AAL 90 atlas and that the top 20 volumes are eliminated using the DPARSF toolkit. However, no specific steps or tools are mentioned for denoising, head motion correction, band-pass filtering, fiber tracking, or tensor fitting.\n\nTherefore, I would answer:\n\nNO"
+    }
+  ]
+}
